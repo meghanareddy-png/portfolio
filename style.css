@@ -734,3 +734,65 @@ footer{
 }
 
 }
+/*================ CAREER GOAL SECTION ================*/
+
+#goal{
+    padding:120px 8%;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.goal-box{
+    width:100%;
+    max-width:1000px;
+    padding:60px;
+    background:#111;
+    border:3px solid #ffb6c1;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(255,182,193,0.3);
+}
+
+.goal-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 35px #ffb6c1;
+}
+
+.goal-box h1{
+    font-size:60px;
+    font-weight:800;
+    color:#ffb6c1;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    line-height:80px;
+    margin-bottom:25px;
+}
+
+.goal-box p{
+    font-size:20px;
+    color:#ddd;
+    line-height:35px;
+    max-width:750px;
+    margin:auto;
+}
+
+@media(max-width:768px){
+
+    .goal-box{
+        padding:35px 20px;
+    }
+
+    .goal-box h1{
+        font-size:40px;
+        line-height:55px;
+    }
+
+    .goal-box p{
+        font-size:16px;
+        line-height:28px;
+    }
+
+}
