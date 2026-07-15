@@ -944,7 +944,7 @@ footer{
     margin:auto;
     line-height:1.7;
     border-right:3px solid #ffb6c1;
-    display:inline;
+    display:block;
     animation:blink .8s infinite;
 }
 
