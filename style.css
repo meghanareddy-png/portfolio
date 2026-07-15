@@ -939,10 +939,11 @@ footer{
 
 .typing{
     font-size:2.5rem;
+    font-weight:500;
     color:#ffffff;
-    max-width:950px;
-    margin:auto;
-    line-height:1.7;
+    max-width:1200px;
+    margin: 40px auto 0;
+    line-height:1.8;
     border-right:3px solid #ffb6c1;
     display:block;
     animation:blink .8s infinite;
