@@ -387,140 +387,186 @@ nav ul{
     font-weight:600;
 
 }
-/* =========================
-   SKILLS
-========================= */
-
 /*==========================
-    TECHNICAL SKILLS
+        SKILLS
 ==========================*/
 
-.skills-dashboard{
+.skills{
 
-    max-width:800px;
-    margin:auto;
+    padding:100px 10%;
+    background:#000;
+
+}
+
+.skills-container{
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+.skills-box{
+
+    flex:1;
+    min-width:350px;
     background:#111;
     border:2px solid #ffb6c1;
     border-radius:20px;
-    padding:40px;
-    box-shadow:0 0 20px rgba(255,182,193,.25);
+    padding:35px;
     transition:.4s;
 
 }
 
-.skills-dashboard:hover{
+.skills-box:hover{
 
-    box-shadow:0 0 35px #ffb6c1;
+    transform:translateY(-10px);
+    box-shadow:0 0 30px #ffb6c1;
 
 }
 
-.skill-row{
+.skills-box h2{
 
+    color:#ffb6c1;
+    text-align:center;
     margin-bottom:30px;
+    font-size:30px;
 
 }
 
-.skill-row:last-child{
+/* Technical Skills */
 
-    margin-bottom:0;
+.skill{
+
+    margin-bottom:25px;
 
 }
 
-.skill-name{
+.skill span{
 
-    font-size:22px;
+    color:white;
+    font-size:18px;
     font-weight:600;
-    color:#fff;
-    margin-bottom:10px;
 
 }
 
-.skill-bar{
+.progress-bar{
 
     width:100%;
-    height:18px;
-    background:#2b2b2b;
+    height:15px;
+    background:#333;
     border-radius:30px;
     overflow:hidden;
+    margin-top:10px;
 
 }
 
-.skill-fill{
+.progress-bar div{
 
     height:100%;
     border-radius:30px;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    padding-right:15px;
-    font-size:14px;
-    font-weight:600;
+    text-align:right;
+    padding-right:10px;
+    line-height:15px;
+    font-size:12px;
+    font-weight:bold;
     color:#000;
-    background:linear-gradient(to right,#ffb6c1,#ff69b4);
-    animation:grow 2s ease;
+    background:linear-gradient(90deg,#ffb6c1,#ff69b4);
 
 }
 
 .python{
 
     width:90%;
+    animation:python 2s;
 
 }
 
 .c{
 
     width:85%;
+    animation:c 2s;
 
 }
 
 .java{
 
     width:80%;
+    animation:java 2s;
 
 }
 
-@keyframes grow{
+@keyframes python{
 
-    from{
-
-        width:0;
-
-    }
+from{width:0;}
+to{width:90%;}
 
 }
+
+@keyframes c{
+
+from{width:0;}
+to{width:85%;}
+
+}
+
+@keyframes java{
+
+from{width:0;}
+to{width:80%;}
+
+}
+
 /* Soft Skills */
 
 .soft-skills{
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
 
 }
 
-.soft-card{
+.soft-skills span{
 
-    background:#111;
+    background:#1c1c1c;
     border:2px solid #ffb6c1;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-    font-size:18px;
-    font-weight:600;
+    color:white;
+    padding:12px 20px;
+    border-radius:40px;
+    font-size:17px;
     transition:.4s;
+    cursor:pointer;
 
 }
 
-.soft-card:hover{
+.soft-skills span:hover{
 
     background:#ffb6c1;
-    color:#000;
-    transform:translateY(-8px);
-    box-shadow:0 0 20px #ffb6c1;
+    color:black;
+    transform:scale(1.08);
 
 }
 
+/* Responsive */
+
+@media(max-width:768px){
+
+.skills-container{
+
+    flex-direction:column;
+
+}
+
+.skills-box{
+
+    width:100%;
+
+}
+
+}
 /* ==========================================
    SMALL SCREEN
 ========================================== */
