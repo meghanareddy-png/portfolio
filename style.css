@@ -391,86 +391,103 @@ nav ul{
    SKILLS
 ========================= */
 
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-}
+/*==========================
+    TECHNICAL SKILLS
+==========================*/
 
-.skill-card{
+.skills-dashboard{
+
+    max-width:800px;
+    margin:auto;
     background:#111;
-    padding:25px;
-    border-radius:15px;
     border:2px solid #ffb6c1;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 0 20px rgba(255,182,193,.25);
     transition:.4s;
+
 }
 
-.skill-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 20px #ffb6c1;
+.skills-dashboard:hover{
+
+    box-shadow:0 0 35px #ffb6c1;
+
 }
 
-.skill-title{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:12px;
-    color:#fff;
+.skill-row{
+
+    margin-bottom:30px;
+
+}
+
+.skill-row:last-child{
+
+    margin-bottom:0;
+
+}
+
+.skill-name{
+
+    font-size:22px;
     font-weight:600;
+    color:#fff;
+    margin-bottom:10px;
+
 }
 
-.progress{
+.skill-bar{
+
     width:100%;
-    height:10px;
-    background:#333;
-    border-radius:10px;
+    height:18px;
+    background:#2b2b2b;
+    border-radius:30px;
     overflow:hidden;
+
 }
 
-.progress-bar{
+.skill-fill{
+
     height:100%;
-    background:#ffb6c1;
-    border-radius:10px;
-    animation:fill 2s ease;
-}
+    border-radius:30px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:15px;
+    font-size:14px;
+    font-weight:600;
+    color:#000;
+    background:linear-gradient(to right,#ffb6c1,#ff69b4);
+    animation:grow 2s ease;
 
-.c{
-    width:90%;
 }
 
 .python{
+
+    width:90%;
+
+}
+
+.c{
+
     width:85%;
+
 }
 
 .java{
+
     width:80%;
+
 }
 
-.html{
-    width:90%;
-}
+@keyframes grow{
 
-.css{
-    width:85%;
-}
-
-.js{
-    width:75%;
-}
-
-@keyframes fill{
     from{
+
         width:0;
+
     }
-}
-/* Sub Heading */
 
-.sub-heading{
-    color:#ffb6c1;
-    text-align:center;
-    margin:50px 0 25px;
-    font-size:30px;
 }
-
 /* Soft Skills */
 
 .soft-skills{
