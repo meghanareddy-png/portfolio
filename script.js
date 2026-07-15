@@ -234,4 +234,25 @@ buttons.forEach(btn=>{
 
     });
 
+const text = "Aspiring Software Development Engineer with a strong foundation in C, Python, Java, and Web Development. Passionate about building efficient software solutions, solving real-world problems, and continuously learning new technologies to contribute to innovative projects.";
+
+const typing = document.querySelector(".typing");
+
+let index = 0;
+
+function type(){
+
+    if(index < text.length){
+
+        typing.textContent += text.charAt(index);
+
+        index++;
+
+        setTimeout(type,35);
+
+    }
+
+}
+
+window.onload = type;
 });
